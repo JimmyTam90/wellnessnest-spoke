@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/wellness-shilajit", "destination": "https://wellnessnest-spoke.vercel.app/wellness-shilajit" },
-    { "source": "/wellness-shilajit/:path*", "destination": "https://wellnessnest-spoke.vercel.app/wellness-shilajit/:path*" }
+    { "source": "/wellness-nest", "destination": "https://wellnessnest-spoke.vercel.app/wellness-nest" },
+    { "source": "/wellness-nest/:path*", "destination": "https://wellnessnest-spoke.vercel.app/wellness-nest/:path*" }
   ]
 }

@@ -1,14 +1,13 @@
-// Hub–Spoke subpath: PUBLIC_SUBPATH = /wellness-nest (Section 1.5)
-const SUBPATH = '/wellness-nest';
+// Hub–Spoke subpath. Change it ONLY here (or set BASE_PATH in Vercel env); everything else derives from it.
+const SUBPATH = process.env.BASE_PATH || '/wellness-nest';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: SUBPATH,
   assetPrefix: SUBPATH,
-  trailingSlash: false, // TRAILING_SLASH_POLICY: DISABLED
+  trailingSlash: false,
   reactStrictMode: true,
   images: {
-    // Remote product images from the merchant CDN (Shopify) only.
     remotePatterns: [
       { protocol: 'https', hostname: 'wellnessnest.co', pathname: '/cdn/shop/files/**' },
       { protocol: 'https', hostname: 'cdn.shopify.com', pathname: '/s/files/**' },
