@@ -1,5 +1,5 @@
-// Hub–Spoke subpath: PUBLIC_SUBPATH = /wellness-shilajit (Section 1.5)
-const SUBPATH = '/wellness-shilajit';
+// Hub–Spoke subpath: PUBLIC_SUBPATH = /wellness-nest (Section 1.5)
+const SUBPATH = '/wellness-nest';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
