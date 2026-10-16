@@ -2,9 +2,10 @@ import Link from 'next/link';
 import { SITE, asset } from '@/lib/config';
 
 const LEGAL = [
-  { href: '/privacy', label: 'Privacy Policy' },
-  { href: '/terms', label: 'Terms of Service' },
+  { href: '/privacy-policy', label: 'Privacy Policy' },
+  { href: '/terms-of-service', label: 'Terms of Service' },
   { href: '/affiliate-disclosure', label: 'Affiliate Disclosure' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Footer() {
@@ -22,11 +23,10 @@ export default function Footer() {
           <img src={asset('/logo-trimmed.png')} alt="PrimeGearLab Independent Lab" width={1181} height={901} className="h-24 w-auto" />
         </Link>
 
-        <nav aria-label="Legal" className="flex flex-wrap gap-x-6 gap-y-2 md:justify-end">
+        <nav aria-label="Legal" className="flex flex-wrap gap-x-6 gap-y-2 md:flex-nowrap md:justify-end md:whitespace-nowrap">
           {LEGAL.map((l) => (
             <Link key={l.href} href={l.href} className="text-sm font-medium text-white hover:underline">{l.label}</Link>
           ))}
-          <a href={`mailto:${SITE.contactEmail}`} className="text-sm font-medium text-white hover:underline">Contact</a>
         </nav>
 
         <div className="w-full max-w-4xl space-y-3 text-left text-sm leading-relaxed text-slate-400">

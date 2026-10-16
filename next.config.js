@@ -13,6 +13,13 @@ const nextConfig = {
       { protocol: 'https', hostname: 'cdn.shopify.com', pathname: '/s/files/**' },
     ],
   },
+  // Old short URLs -> new routes (basePath is applied automatically to both sides)
+  async redirects() {
+    return [
+      { source: '/privacy', destination: '/privacy-policy', permanent: true },
+      { source: '/terms', destination: '/terms-of-service', permanent: true },
+    ];
+  },
   env: { NEXT_PUBLIC_BASE_PATH: SUBPATH },
 };
 
