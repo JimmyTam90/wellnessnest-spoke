@@ -56,10 +56,10 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Cột 2 - Hàng 1: Legal Links (Luôn nằm ngang trên Desktop) */}
+        {/* Cột 2 - Hàng 1: Legal Links (Khớp chuẩn xác tên route trong thư mục app/) */}
         <div className="footer-links">
-          <Link href="/privacy" style={{ color: '#e2e8f0', textDecoration: 'none', fontSize: '0.85rem', fontWeight: '600', whiteSpace: 'nowrap' }}>Privacy Policy</Link>
-          <Link href="/terms" style={{ color: '#e2e8f0', textDecoration: 'none', fontSize: '0.85rem', fontWeight: '600', whiteSpace: 'nowrap' }}>Terms of Service</Link>
+          <Link href="/privacy-policy" style={{ color: '#e2e8f0', textDecoration: 'none', fontSize: '0.85rem', fontWeight: '600', whiteSpace: 'nowrap' }}>Privacy Policy</Link>
+          <Link href="/terms-of-service" style={{ color: '#e2e8f0', textDecoration: 'none', fontSize: '0.85rem', fontWeight: '600', whiteSpace: 'nowrap' }}>Terms of Service</Link>
           <Link href="/affiliate-disclosure" style={{ color: '#e2e8f0', textDecoration: 'none', fontSize: '0.85rem', fontWeight: '600', whiteSpace: 'nowrap' }}>Affiliate Disclosure</Link>
           <Link href="/contact" style={{ color: '#e2e8f0', textDecoration: 'none', fontSize: '0.85rem', fontWeight: '600', whiteSpace: 'nowrap' }}>Contact</Link>
         </div>
