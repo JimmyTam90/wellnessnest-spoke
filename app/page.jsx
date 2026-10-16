@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import AffiliateLink, { CTA_CLASS } from '@/components/AffiliateLink';
-import ProductCard from '@/components/ProductCard';
+import ProductSection from '@/components/ProductSection';
 import { PRODUCT } from '@/data/product';
 
 const CHECKS = [
@@ -59,25 +59,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="product" className="bg-slate-50">
-        <div className="mx-auto grid max-w-6xl items-stretch gap-8 px-4 py-14 md:grid-cols-2 md:py-20">
-          <ProductCard />
-          <div className="flex flex-col justify-center">
-            <h2 className="text-2xl font-bold text-navy sm:text-3xl">The product we link to</h2>
-            <p className="mt-4 leading-relaxed text-slate-600">
-              Wellness Nest sells this resin as a 30-day supply. Our link opens the merchant&rsquo;s own product page, where current price, stock, serving information and refund terms are shown.
-            </p>
-            <p className="mt-3 leading-relaxed text-slate-600">
-              The merchant&rsquo;s page mentions a 90-day refund policy with eligibility conditions. Read the policy itself before relying on it.
-            </p>
-            <div className="mt-6">
-              <AffiliateLink destinationKey="collection:all" placement="collection-link" className="text-sm font-semibold text-amber-dark underline underline-offset-4">
-                Browse all Wellness Nest products
-              </AffiliateLink>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductSection />
 
       <section id="guide" className="mx-auto max-w-3xl px-4 py-14 md:py-20">
         <h2 className="text-2xl font-bold text-navy sm:text-3xl">How to read a shilajit listing</h2>
